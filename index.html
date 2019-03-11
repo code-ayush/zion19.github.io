@@ -37,8 +37,6 @@
 		<!-- Style.css -->
 		<link href="css/style.css" rel="stylesheet">
         <link href="css/countdown.css" rel="stylesheet">
-        
-        <link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css"/>
      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -47,103 +45,17 @@
 
 	<body onload="myFunction()" style="margin:0;">
 
+<div id="loader" style=""></div>
 
       <audio id="my_audio" class="bgAudio" loop="loop">
 			<source src="audio/ZION.mp3" type="audio/mpeg">
 		</audio>
         
-<!--
         <video autoplay muted loop id="myVideo" poster="images/slide4.JPG">
                     <source src="video/ZION.mp4" type="video/mp4">
         </video>
--->
         
-		   <div id="container" class="wrapper">
-		<ul id="scene" class="scene unselectable"
-			data-friction-x="0.1"
-			data-friction-y="0.1"
-			data-scalar-x="25"
-			data-scalar-y="15">
-			<li class="layer" data-depth="0.00"></li>
-			<li class="layer" data-depth="0.10"><div class="background"> <video autoplay muted loop id="myVideo" poster="images/slide4.JPG">
-                    <source src="video/ZION.mp4" type="video/mp4">
-                </video> </div>
-            <div  class="wrapper" id="myVideo"  style=' background:  url("images/effect/dotsred.png") 0 0;'>
-        
-
-</div></li>
-			<li class="layer" data-depth="0.10"><div class="light orange b phase-4"></div></li>
-			<li class="layer" data-depth="0.10"><div class="light purple c phase-5"></div></li>
-			<li class="layer" data-depth="0.10"><div class="light orange d phase-3"></div></li>
-			<li class="layer" data-depth="0.15">
-				<ul class="rope depth-10">
-					<li><img src="assets/images/rope.png" alt="Rope"></li>
-					<li class="hanger position-2">
-						<div class="board cloud-2 swing-1"></div>
-					</li>
-					<li class="hanger position-4">
-						<div class="board cloud-1 swing-3"></div>
-					</li>
-					<li class="hanger position-8">
-						<div class="board birds swing-5"></div>
-					</li>
-				</ul>
-			</li>
-			<li class="layer" data-depth="0.20"><h1 class="title">ZION<em>19</em></h1></li>
-			<li class="layer" data-depth="0.30">
-				<ul class="rope depth-30">
-					<li><img src="assets/images/rope.png" alt="Rope"></li>
-					<li class="hanger position-1">
-						<div class="board cloud-1 swing-3"></div>
-					</li>
-					<li class="hanger position-5">
-						<div class="board cloud-4 swing-1"></div>
-					</li>
-				</ul>
-			</li>
-			<li class="layer" data-depth="0.30"><div class="wave paint depth-30"></div></li>
-			<li class="layer" data-depth="0.40"><div class="wave plain depth-40"></div></li>
-			<li class="layer" data-depth="0.50"><div class="wave paint depth-50"></div></li>
-			<li class="layer" data-depth="0.60"><div class="lighthouse depth-60"></div></li>
-			<li class="layer" data-depth="0.60">
-				<ul class="rope depth-60">
-					<li><img src="assets/images/rope.png" alt="Rope"></li>
-					<li class="hanger position-3">
-						<div class="board birds swing-5"></div>
-					</li>
-					<li class="hanger position-6">
-						<div class="board cloud-2 swing-2"></div>
-					</li>
-					<li class="hanger position-8">
-						<div class="board cloud-3 swing-4"></div>
-					</li>
-				</ul>
-			</li>
-			<li class="layer" data-depth="0.60"><div class="wave plain depth-60"></div></li>
-			<li class="layer" data-depth="0.80"><div class="wave plain depth-80"></div></li>
-			<li class="layer" data-depth="1.00"><div class="wave paint depth-100"></div></li>
-		</ul>
-		<div id="prompt" class="wrapper prompt hide accelerate">
-			<div class="cell accelerate">
-				<div class="panel center unselectable accelerate">
-					<button id="dismiss" class="dismiss">
-						<div class="cross">
-							<div class="x"></div>
-							<div class="y"></div>
-						</div>
-					</button>
-					<div class="tilt-scene">
-						<img class="tilt" src="assets/images/tilt.png">
-					</div>
-					<h2>Tilting is fun!</h2>
-					<p>For the best experience, check out this site on a mobile or tablet equipped with a gyroscope</p>
-					<p>(iPads are the coolest)</p>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-
+		<div  class="wrapper"  style=' background:  url("images/effect/dotsred.png") 0 0;'></div>
 
 
 		<div class="page-wrapper" id="myDiv" class="animate-bottom">
@@ -334,100 +246,6 @@
         <script> window.onload = function() {
     document.getElementById("my_audio").play();
 }</script>
-        
-         <script src="js/videojs.js"></script>
-        
-        
-        <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
-
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-        
-        <!-- Scripts -->
-	<script src="assets/scripts/js/libraries.min.js"></script>
-	<script src="deploy/jquery.parallax.js"></script>
-	<script>
-
-	// jQuery Selections
-	var $html = $('html'),
-			$container = $('#container'),
-			$prompt = $('#prompt'),
-			$toggle = $('#toggle'),
-			$about = $('#about'),
-			$scene = $('#scene');
-
-	// Hide browser menu.
-	(function() {
-		setTimeout(function(){window.scrollTo(0,0);},0);
-	})();
-
-	// Setup FastClick.
-	FastClick.attach(document.body);
-
-	// Add touch functionality.
-	if (Hammer.HAS_TOUCHEVENTS) {
-		$container.hammer({drag_lock_to_axis: true});
-		_.tap($html, 'a,button,[data-tap]');
-	}
-
-	// Add touch or mouse class to html element.
-	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
-
-	// Resize handler.
-	(resize = function() {
-		$scene[0].style.width = window.innerWidth + 'px';
-		$scene[0].style.height = window.innerHeight + 'px';
-		if (!$prompt.hasClass('hide')) {
-			if (window.innerWidth < 600) {
-				$toggle.addClass('hide');
-			} else {
-				$toggle.removeClass('hide');
-			}
-		}
-	})();
-
-	// Attach window listeners.
-	window.onresize = _.debounce(resize, 200);
-	window.onscroll = _.debounce(resize, 200);
-
-	function showDetails() {
-		$about.removeClass('hide');
-		$toggle.removeClass('i');
-	}
-
-	function hideDetails() {
-		$about.addClass('hide');
-		$toggle.addClass('i');
-	}
-
-	// Listen for toggle click event.
-	$toggle.on('click', function(event) {
-		$toggle.hasClass('i') ? showDetails() : hideDetails();
-	});
-
-	// Pretty simple huh?
-	$scene.parallax();
-
-	// Check for orientation support.
-	setTimeout(function() {
-		if ($scene.data('mode') === 'cursor') {
-			$prompt.removeClass('hide');
-			if (window.innerWidth < 600) $toggle.addClass('hide');
-			$prompt.on('click', function(event) {
-				$prompt.addClass('hide');
-				if (window.innerWidth < 600) {
-					setTimeout(function() {
-						$toggle.removeClass('hide');
-					},1200);
-				}
-			});
-		}
-	},1000);
-
-
-	</script>
-
-
         
     </body>
 </html>
