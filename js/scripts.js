@@ -401,6 +401,9 @@ $(document).ready(function () {
 				$('.audioControl').removeClass('pause');
 			}
 		});
+    $(document).ready(function() {
+    $("#my_audio").get(0).play();
+});
 
 		// Video Play
 		$('.video-play').nivoLightbox({
