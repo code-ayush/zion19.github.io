@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ayush">
+        <meta name="keywords" content="zion,fest,college,new,2017,utu,coer,college of engineering roorkee,annual,cultural,dance,acting,rampwalk,modeling,singing">
+        <meta name="googlebot" content="ZION'17" />
+        <meta name="robots" content="ZION'17" />
+
+		<title>ZION'19</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- PE Icon 7 Stoke -->
+		<link href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+		<link href="fonts/pe-icon-7-stroke/css/helper.css" rel="stylesheet">
+		<!-- PE Icon Social -->
+		<link href="fonts/pe-icon-social/css/pe-icon-social.css" rel="stylesheet">
+		<link href="fonts/pe-icon-social/css/helper.css" rel="stylesheet">
+		<!-- Animate.css -->
+		<link href="css/animate.min.css" rel="stylesheet">
+		<!-- Owl Carousel -->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/owl.theme.default.css" rel="stylesheet">
+		<!-- YTPlayer -->
+		<link href="css/jquery.mb.YTPlayer.min.css" rel="stylesheet">
+		<!-- Nivo Lightbox -->
+		<link href="scripts/Nivo-Lightbox/nivo-lightbox.css" rel="stylesheet">
+		<link href="scripts/Nivo-Lightbox/themes/default/default.css" rel="stylesheet">
+		<!-- Slider -->
+		<link href="css/slider.css" rel="stylesheet">
+		<!-- Style.css -->
+		<link href="css/style.css" rel="stylesheet">
+        <link href="css/countdown.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+
+    </head>
+
+	<body onload="myFunction()" style="margin:0;">
+
+      <div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable"
+			data-friction-x="0.1"
+			data-friction-y="0.1"
+			data-scalar-x="25"
+			data-scalar-y="15">
+			<li class="layer" data-depth="0.00"></li>
+			<li class="layer" data-depth="0.10"><div class="background"> <video autoplay muted loop id="myVideo" poster="images/slide4.JPG">
+                    <source src="video/ZION.mp4" type="video/mp4">
+                </video> </div>
+            <div  class="wrapper" id="myVideo"  style=' background:  url("images/effect/dotsred.png") 0 0;'>
+        
+
+</div></li>
+			<li class="layer" data-depth="0.10"><div class="light orange b phase-4"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light purple c phase-5"></div></li>
+			<li class="layer" data-depth="0.10"><div class="light orange d phase-3"></div></li>
+			<li class="layer" data-depth="0.15">
+				<ul class="rope depth-10">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-2">
+						<div class="board cloud-2 swing-1"></div>
+					</li>
+					<li class="hanger position-4">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board birds swing-5"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.20"><h1 class="title">ZION<em>19</em></h1></li>
+			<li class="layer" data-depth="0.30">
+				<ul class="rope depth-30">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-1">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-5">
+						<div class="board cloud-4 swing-1"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.30"><div class="wave paint depth-30"></div></li>
+			<li class="layer" data-depth="0.40"><div class="wave plain depth-40"></div></li>
+			<li class="layer" data-depth="0.50"><div class="wave paint depth-50"></div></li>
+			<li class="layer" data-depth="0.60"><div class="lighthouse depth-60"></div></li>
+			<li class="layer" data-depth="0.60">
+				<ul class="rope depth-60">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-3">
+						<div class="board birds swing-5"></div>
+					</li>
+					<li class="hanger position-6">
+						<div class="board cloud-2 swing-2"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board cloud-3 swing-4"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.60"><div class="wave plain depth-60"></div></li>
+			<li class="layer" data-depth="0.80"><div class="wave plain depth-80"></div></li>
+			<li class="layer" data-depth="1.00"><div class="wave paint depth-100"></div></li>
+		</ul>
+		<div id="prompt" class="wrapper prompt hide accelerate">
+			<div class="cell accelerate">
+				<div class="panel center unselectable accelerate">
+					<button id="dismiss" class="dismiss">
+						<div class="cross">
+							<div class="x"></div>
+							<div class="y"></div>
+						</div>
+					</button>
+					<div class="tilt-scene">
+						<img class="tilt" src="assets/images/tilt.png">
+					</div>
+					<h2>Tilting is fun!</h2>
+					<p>For the best experience, check out this site on a mobile or tablet equipped with a gyroscope</p>
+					<p>(iPads are the coolest)</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+		<div class="page-wrapper" id="myDiv" class="animate-bottom">
+			<div class="inner">
+                
+				<a class="menu-open">
+					<span class="line top-line"></span>
+					<span class="line middle-line"></span>
+					<span class="line bottom-line"></span>
+					<span class="line top-line left"></span>
+					<span class="line middle-line left"></span>
+					<span class="line bottom-line left"></span>
+				</a>
+                
+				<div class="menu" style="background-image: url('');">
+					<div class="content">
+						<header class="menu-header">
+							<h3><img src="images/zionlogo.png" alt="Zion logo" class="img-responsive center-block" ></h3>
+							<a href="#" class="menu-close"><span></span><span></span><span></span><span></span></a>
+						</header>
+						<nav class="main-nav">
+							<ul class="list-unstyled">
+								<li><a href="index.html"><span>Home</span></a></li>
+								<li><a href="about.html"><span>About Zion</span></a></li>
+								<li><a href="gallery.html"><span>GALLERY</span></a></li>
+								<li><a href="event.html"><span>Events</span></a></li>
+                                <li><a href="team.html"><span>team zion</span></a></li> 
+								<li><a href="Sponsors.html"><span>Sponsors</span></a></li>
+								<li><a href="contact.html"><span>Contact Us</span></a></li>
+							</ul>
+						</nav>
+						<div class="bottom-info">
+							<p><a href="mainevents.html" target="_blank" class="button">EVENTS</a></p>
+							<nav class="bottom-info-nav">
+								<ul class="list-unstyled">
+									<li><a href="#" class="audioControl"><i class="pe-7s-volume"></i></a></li>
+									<li><a href="#" class="credits-open">OUR TEAM</a></li>
+									<li><a href="#" class="share-open">Share &amp; Follow</a></li>
+								</ul>
+								<div class="share" style="text-align:center;">
+									<a href="https://www.facebook.com/coerzion" target="_blank"><i class="pe-so-facebook"></i></a>
+									<a href="https://www.instagram.com/_coer_zion" target="_blank"><i class="pe-so-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCvOyDiajZg-EWun-3l8UG6g" target="_blank"><img src="images/youtube.png"></a>
+                                    <a href="mailto:zionculturalfest@gmail.com" ><i class="pe-so-google-plus"></i></a>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			
+				
+<!--
+				
+				<div class="page-middle">
+                    
+					<h1><small>This time its SpookTacular</small></h1>
+                    <br><br>
+					<div class="button-row">
+                        <a href="about.html" class="button video-popup" >zion 2k17</a>
+                        <a href="Registration/index.php" target="_blank" class="button white" >REGISTER</a>
+                    </div>
+                    <div id="count" style="font-size:20px;"></div>					
+                    <div class="quotes">
+                        <br>
+                        <div class="quote">
+                            Oorja<span>The cultural committee</span>
+                        </div>
+                        
+						<div class="quote">
+                            COLLEGE OF ENGINEERING ROORKEE<span>ROORKEE</span>
+                        </div>
+                        
+						<div class="quote">
+                            <span>&nbsp;</span>
+                            10-13 April
+                            
+                        </div>
+                        
+                        <div class="quote">
+                            The mega annual Cultural fest<span>COER</span>
+                        </div>
+                    </div>
+				</div>
+            
+				<div class="bottom-info align" >
+					<p><a href="proshow.html" target="_blank" class="button">PROSHOW</a></p>
+					<nav class="bottom-info-nav">
+                                <ul class="list-unstyled" >
+                                    <li><a href="#" class="audioControl"><i class="pe-7s-volume"></i></a></li>
+									<li><a href="#" class="credits-open">OUR TEAM</a></li>
+									<li><a href="#" class="share-open">Share &amp; Follow</a></li>
+									
+								</ul>
+								<div class="share" style="text-align:center;">&nbsp;&nbsp;&nbsp;  
+									<a href="https://www.facebook.com/coerzion" target="_blank"><i class="pe-so-facebook"></i></a>
+									<a href="https://www.instagram.com/_coer_zion" target="_blank"><i class="pe-so-instagram"></i></a>
+                                    <a href="mailto:zionculturalfest@gmail.com"><i class="pe-so-google-plus"></i></a>
+								</div>
+					</nav>
+				</div>  
+                
+                
+-->
+
+				<div class="credits">
+                    
+					<div class="left">
+						<div class="large-titles">
+							<div class="title">Faculty COORDINATOR<span>Akhil Dangwal</span></div>
+						</div> 
+					</div> 
+                    
+					<div class="titles">
+                        <span>ZION'17 CO-ORDINATORS: </span>Sunchit sharma <a href="tel:+919690393093"><span>+919690393093</span></a> Rohan rana <a href="tel:+919634416045"><span> +919634416045</span></a>
+                        <br>
+                        <span>EVENT HEADS:</span> umang<a href="tel:+919719734879"><span> +919719734879</span></a> mohit <a href="tel:+919410748330"><span>+919410748330</span></a> mukul <a href="tel:+919045700628"><span>+919045700628</span></a>
+                        <br>
+                        <span>SPONSORSHIP:</span> Sunchit Sharma<a href="tel:+919690393093"><span> +919690393093</span></a>
+                        <br>
+                        <a href="https://www.facebook.com/ayu97gupta" target="_blank"><span>Web Designed by</span> Ayush</a> <a href="tel:+918791013588"><span>+918791013588</span></a>
+                        
+                    </div>
+				</div>
+
+			</div>
+        </div>
+      
+
+		
+
+		<!-- jQuery -->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Isotope -->
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Nice Scroll -->
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<!-- YTPlayer -->
+		<script src="js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- Vide -->
+		<script src="js/jquery.vide.min.js"></script>
+		<!-- Nivo Lightbox -->
+		<script src="scripts/Nivo-Lightbox/nivo-lightbox.min.js"></script>
+		<!-- Countdown -->
+		<script src="js/countdown.js"></script>
+		<!-- Scripts.js -->
+		<script src="js/scripts.js"></script>
+		<!-- pace -->
+		<script src="js/pace.min.js"></script>
+        <script src="js/countdown.js"></script>
+        
+        <script src="js/videojs.js"></script>
+        
+        <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+        
+        <!-- Scripts -->
+	<script src="assets/scripts/js/libraries.min.js"></script>
+	<script src="deploy/jquery.parallax.js"></script>
+	<script>
+
+	// jQuery Selections
+	var $html = $('html'),
+			$container = $('#container'),
+			$prompt = $('#prompt'),
+			$toggle = $('#toggle'),
+			$about = $('#about'),
+			$scene = $('#scene');
+
+	// Hide browser menu.
+	(function() {
+		setTimeout(function(){window.scrollTo(0,0);},0);
+	})();
+
+	// Setup FastClick.
+	FastClick.attach(document.body);
+
+	// Add touch functionality.
+	if (Hammer.HAS_TOUCHEVENTS) {
+		$container.hammer({drag_lock_to_axis: true});
+		_.tap($html, 'a,button,[data-tap]');
+	}
+
+	// Add touch or mouse class to html element.
+	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+	// Resize handler.
+	(resize = function() {
+		$scene[0].style.width = window.innerWidth + 'px';
+		$scene[0].style.height = window.innerHeight + 'px';
+		if (!$prompt.hasClass('hide')) {
+			if (window.innerWidth < 600) {
+				$toggle.addClass('hide');
+			} else {
+				$toggle.removeClass('hide');
+			}
+		}
+	})();
+
+	// Attach window listeners.
+	window.onresize = _.debounce(resize, 200);
+	window.onscroll = _.debounce(resize, 200);
+
+	function showDetails() {
+		$about.removeClass('hide');
+		$toggle.removeClass('i');
+	}
+
+	function hideDetails() {
+		$about.addClass('hide');
+		$toggle.addClass('i');
+	}
+
+	// Listen for toggle click event.
+	$toggle.on('click', function(event) {
+		$toggle.hasClass('i') ? showDetails() : hideDetails();
+	});
+
+	// Pretty simple huh?
+	$scene.parallax();
+
+	// Check for orientation support.
+	setTimeout(function() {
+		if ($scene.data('mode') === 'cursor') {
+			$prompt.removeClass('hide');
+			if (window.innerWidth < 600) $toggle.addClass('hide');
+			$prompt.on('click', function(event) {
+				$prompt.addClass('hide');
+				if (window.innerWidth < 600) {
+					setTimeout(function() {
+						$toggle.removeClass('hide');
+					},1200);
+				}
+			});
+		}
+	},1000);
+
+
+	</script>
+
+
+
+    </body>
+</html>

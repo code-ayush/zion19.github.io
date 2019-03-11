@@ -109,6 +109,7 @@ body {
 	color: #fff;
 	letter-spacing: 1.4px;
 	background-color: #071013;
+	overflow: hidden;
 }
 a {
 	color: #0084ff;
@@ -291,7 +292,8 @@ h6 {
 	background: #0084ff;
 }
 .button-row {
-	margin-bottom: 80px;
+	margin-bottom: 0px;
+    margin-top: auto;
 }
 .button-row.left {
 	margin: 0;
@@ -543,7 +545,7 @@ textarea {
 .page-contact {
 	position: relative;
 	top: 50%;
-    background: rgba(17,21,31,.9);
+    background: rgba(0, 0, 102,.7);
     width: 100%;
 	height: 100%;
 	-webkit-transform: translateY(-50%);
@@ -936,7 +938,7 @@ textarea {
 }
 .menu {
 	width: 320px;
-	background: #10141e;
+	background: white;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -960,7 +962,7 @@ textarea {
 }
 .menu>.content {
 	padding: 30px;
-	background: rgba(17,21,31,.9);
+	background: rgba(0, 0, 102,.9);
 	min-height: 100%;
 }
 .menu-header {
@@ -2780,4 +2782,103 @@ textarea {
     height: 100%;
   
   background: #1B2240 url("images/effect/dotsred.png") 0 0;
+}
+#gal{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#msg{
+    font-family: fantasy;
+    font-size: 5em;
+    color:white;
+    line-height: 70px;
+    position: absolute;
+    top:30%;
+    left: 10%;
+}
+#btn{
+    height: 35px;
+    width: 150px;
+    background-color:black;
+    font-family: fantasy;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top:55%;
+    left: 10%;
+    cursor: pointer;
+}
+#btn::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 90px;
+    background-color:black;
+    top:50%;
+    left: 100%;
+}
+.blp{
+    width: 310px;
+    height: 210px;
+    background-color: royalblue;
+    position: absolute;
+    transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
+    box-shadow: 13px 12px 15px -5px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+.blp img{
+    width: 310px;
+    height: 210px;
+    transition: all .3s;
+}
+.blp:hover img{
+    transform: translate(-3%,-3%);
+}
+.b1{
+    top:-9%;
+    right: -7%;
+}
+.b2{
+    top:6%;    
+    right: 5%; 
+}
+.b3{
+    top:21%;
+    right: 17%;
+}
+.b4{
+    top:36%;
+    right: 29%;
+}
+.b5{
+    top:51%;
+    right: 41%;
+}
+.b6{
+    top:20%;
+    right: -18%;
+}
+.b7{
+    top:35%;
+    right: -6%;
+}
+.b8{
+    top:50%;
+    right: 6%;
+}
+.b9{
+    top:65%;
+    right: 18%;
+}
+.b10{
+    top:65%;
+    right: -17%;
+}
+.b11{
+    top:79%;
+    right: -5%;
 }
